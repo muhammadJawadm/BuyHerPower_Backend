@@ -9,7 +9,8 @@ const storeValidation = [
     .withMessage('Store name must be between 2 and 100 characters'),
   
   body('category')
-    .isIn(['Electronics', 'Clothing', 'Home & Garden', 'Sports', 'Books', 'Toys', 'Beauty', 'Automotive', 'Food', 'Other'])
+    .isIn(["Handmade Clothing", "Traditional Textiles", "Crochet & Knitting", "Jewelry & Accessories", "Bags & Purses", "Home Decor", "Kitchen & Dining", "Local Crafts", "Organic & Herbal", "Beauty & Care", "Food & Homemade Items", "Pet & Kids Items"
+])
     .withMessage('Invalid store category'),
   
   body('description')

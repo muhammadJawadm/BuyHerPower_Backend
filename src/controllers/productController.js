@@ -75,7 +75,7 @@ const createProduct = async (req, res) => {
 // @access  Public
 const getAllProducts = async (req, res) => {
   try {
-    const { category, search, store_id, page = 1, limit = 10 } = req.query;
+    const { category, search, store_id, page = 1, limit = 30 } = req.query;
 
     // Build filter
     const filter = {};

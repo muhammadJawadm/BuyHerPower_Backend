@@ -32,7 +32,7 @@ const productSchema = new mongoose.Schema({
   category: {
     type: String,
     required: [true, 'Product category is required'],
-    enum: ['Electronics', 'Clothing', 'Home & Garden', 'Sports', 'Books', 'Toys', 'Beauty', 'Automotive', 'Food', 'Other']
+    enum: ["Handmade Clothing", "Traditional Textiles", "Crochet & Knitting", "Jewelry & Accessories", "Bags & Purses", "Home Decor", "Kitchen & Dining", "Local Crafts", "Organic & Herbal", "Beauty & Care", "Food & Homemade Items", "Pet & Kids Items"]
   },
   images: {
     type: [String],
